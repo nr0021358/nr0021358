@@ -8,5 +8,5 @@ parameters:
                - abc
                - def
                - ghi
-bash: |
+- bash: |
       echo " Hello World!!"
