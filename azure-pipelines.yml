@@ -3,10 +3,10 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-steps:
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: echo $MYSECRET
-  env:
-    MYSECRET: $(Foo)
+parameters:
+         my_tasks:
+               - abc
+               - def
+               - ghi
+bash: |
+      echo " Hello World!!"
